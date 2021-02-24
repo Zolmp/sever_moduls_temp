@@ -1,10 +1,11 @@
-package kotlin
+package settings
 
-class sever_repository {
+class Repository {
 
-    private val instance = sever_repository()
-    private fun sever_repository() {}
-    fun getInstance() {
+
+    private val instance: Repository = Repository()
+    private fun repository() {}
+    fun getInstance(): Repository? {
         return instance
     }
 
@@ -18,12 +19,12 @@ class sever_repository {
     private var vakancyPublikationsID: Int = 0
 
 
-    fun getlogin(): String? {
-        return login
+    fun getSIBUR(): String? {
+        return SIBUR
     }
 
-    fun setlogin(login: String) {
-        this.login = login
+    fun setSIBUR(SIBUR: String) {
+        this.SIBUR = SIBUR
     }
 
     fun getAdminToken(): String {
@@ -41,4 +42,5 @@ class sever_repository {
     fun setstrelchenkoToken(strelchenkoToken: String) {
         this.strelchenkoToken = strelchenkoToken
     }
+
 }

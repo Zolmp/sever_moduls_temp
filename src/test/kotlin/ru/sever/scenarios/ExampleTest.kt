@@ -1,16 +1,11 @@
-package scenarios
+package ru.sever.scenarios
 import junit.framework.Assert.assertTrue
 import org.json.JSONArray
 import java.util.*
 import org.json.JSONObject
-import org.junit.Before
 import org.junit.Test
 import ru.talenttech.xqa.oknetwork.OkNetwork
 import ru.talenttech.xqa.oknetwork.OkNetwork.restClient
-import ru.talenttech.xqa.oknetwork.actions.Condition
-import ru.talenttech.xqa.oknetwork.actions.shouldBe
-import java.lang.String.format
-import java.text.SimpleDateFormat
 
 class ExampleTest {
 

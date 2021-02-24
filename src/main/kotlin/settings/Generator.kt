@@ -1,9 +1,11 @@
-package kotlin
+package settings
+
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.util.*
 
-class settings {
+class Generator() {
+
 
 
     fun string(): String? {
@@ -119,7 +121,7 @@ class settings {
 
     fun generatorCompanyNames(): String {
         var result = ""
-        val firstNames = "src/test/resources/companyNames.txt"
+        val firstNames = "src/main/resources/companyNames.txt"
         val r = Random()
         try {
             val firstName = Files.readAllLines(Paths.get(firstNames)).toTypedArray()
@@ -130,3 +132,4 @@ class settings {
         return result
     }
 }
+
