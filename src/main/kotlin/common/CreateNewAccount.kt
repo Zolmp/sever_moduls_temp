@@ -11,7 +11,7 @@ import java.util.*
 class CreateNewAccount {
 
  val generator = Generator()
-        //private val temp: Repository = Repository.getInstance()
+    
 
 
         fun createNewProfile(token: String) : String{
